@@ -9,6 +9,6 @@ class CD (publi):
         self.__narrador=n
     
     def mostrarcd (self):
-        print (f"min: {self.__min}, narrador: {self.__narrador}, tit: {self.gettit()}, categ: {self.getcat()}, precio: {self.getpre()}\n")
+        print (f"min: {self.__min}, narrador: {self.__narrador}, tit: {self.gettit()}, categ: {self.getcat()}, precio: {self.getpre()} \n")
         
     

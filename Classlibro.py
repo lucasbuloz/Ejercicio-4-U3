@@ -19,4 +19,4 @@ class libro(publi):
         return self.__cantpag
     
     def mostrarli(self):
-        print (f"autor: {self.__nom}, fecha: {self.__fecha}, cantpag: {self.__cantpag}, titulo: {self.gettit()}, categ: {self.getcat()}, precio: {self.getpre()}\n")
+        print (f"autor: {self.__nom}, fecha: {self.__fecha}, cantpag: {self.__cantpag}, titulo: {self.gettit()}, categ: {self.getcat()}, precio: {self.getpre()} \n")

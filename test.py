@@ -16,6 +16,7 @@ def test():
         print("2. Encontrar publicacion ")
         print("3. Mostrar cantidad de publicaciones de cada tipo")
         print("4. Mostrar publicaciones ")
+        print("5. Finalizar ")
         
         op= int(input("Ingrese opcion: "))
         
@@ -28,7 +29,11 @@ def test():
             lis.mostrarli()
             cd1.mostrarcd()
             lis1.mostrarli()
-        if op==2:
+        elif op==2:
             L.instancia()
-        if op==3:
-            
+        elif op==3:
+            L.canpubli()
+        elif op==4:
+            L.mostrartodo()
+        elif op==5:
+            break
