@@ -1,5 +1,5 @@
 from Classpubli import publi
-class nodo:
+class Nodo:
     __publi: publi
     __siguiente:None
         

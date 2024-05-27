@@ -14,3 +14,6 @@ class publi:
         return self.__cat
     def getpre(self):
         return self.__pre
+    
+    def mostrarpu(self):
+        print (f"{self.__tit}, {self.__cat}, {self.__pre}\n")

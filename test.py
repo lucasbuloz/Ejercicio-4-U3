@@ -5,8 +5,10 @@ from ClassCD import CD
 def test():
 
     L= lista()
-    CD1= CD("OrgulloyPrejuicio", "Novela", 1300, 130, "Pepeargento")
-    lis1= libro("OrgulloyPrejuicio", "Novela", 1300, "Pepito", 2015, 177)
+    cd= CD("OrgulloyPrejuicio", "Novela", 1300, 130, "Pepeargento")
+    lis= libro("OrgulloyPrejuicio", "Novela", 1300, "Pepito", 2015, 177)
+    cd1 = CD("los 3 chanchitos", "fabula", 200, 50, "bartolome")
+    lis1 = libro("los 3 chanchitos", "fabula", 1200, "juan", 2004, 1000)
     
     while True:
         print("---MENU DE OPCIONES---")
@@ -18,7 +20,15 @@ def test():
         op= int(input("Ingrese opcion: "))
         
         if op==1:
-            L.agregar(CD)
+            L.agregar(cd)
+            L.agregar(lis)
+            L.agregar(cd1)
             L.agregar(lis1)
-            L.mostrar()
+            cd.mostrarcd()
+            lis.mostrarli()
+            cd1.mostrarcd()
+            lis1.mostrarli()
+        if op==2:
+            L.instancia()
+        if op==3:
             
