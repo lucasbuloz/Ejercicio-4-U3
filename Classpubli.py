@@ -17,3 +17,6 @@ class publi:
     
     def mostrarpu(self):
         print (f"{self.__tit}, {self.__cat}, {self.__pre}\n")
+        
+    def calcularimporte(self):
+        pass

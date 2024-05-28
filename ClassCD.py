@@ -11,4 +11,6 @@ class CD (publi):
     def mostrarcd (self):
         print (f"min: {self.__min}, narrador: {self.__narrador}, tit: {self.gettit()}, categ: {self.getcat()}, precio: {self.getpre()} \n")
         
-    
+    def calcularimporte(self):
+        impcd= self.getpre()*1.10
+        return impcd
