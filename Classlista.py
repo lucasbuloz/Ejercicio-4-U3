@@ -18,19 +18,7 @@ class lista:
         aux=self.__comienzo
         while aux!=None:
             print(aux.getdato())
-            aux=aux.getsig()
-    
-    def impventa(self, aux):
-        while aux!=None:
-            publi=aux.getdato()
-            if isinstance(publi,libro):
-                publi.calcularimporte()
-            elif isinstance(publi,CD):
-                publi.calcularimporte()
-            aux=aux.getsig()
-                
-            
-            
+            aux=aux.getsig()   
     
     def instancia(self):
         pos=int(input("Ingrese posicion: "))
@@ -69,6 +57,6 @@ class lista:
          i=0
          while aux!=None and i<4:
             publi=aux.getdato()
-            print(f"titulo: {publi.gettit()}, categoria: {publi.getcat()}, precio: {self.impventa(aux)} \n")
+            print(f"titulo: {publi.gettit()}, categoria: {publi.getcat()}, precio: {publi.calcularimporte()} \n")
             aux= aux.getsig()
             i+=1

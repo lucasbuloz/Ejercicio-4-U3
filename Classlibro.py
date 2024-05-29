@@ -22,6 +22,6 @@ class libro(publi):
         print (f"autor: {self.__nom}, fecha: {self.__fecha}, cantpag: {self.__cantpag}, titulo: {self.gettit()}, categ: {self.getcat()}, precio: {self.getpre()} \n")
         
     def calcularimporte(self):
-        diferencia=2024 - publi.getfecha()
-        implib= float(((diferencia/100)*publi.getpre()))
+        diferencia=2024 - self.getfecha()
+        implib= float(((diferencia/100)*self.getpre()))
         return implib
