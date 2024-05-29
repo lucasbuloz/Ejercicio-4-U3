@@ -15,6 +15,8 @@ class publi:
     def getpre(self):
         return self.__pre
     
-    def mostrarpu(self):
-        print (f"{self.__tit}, {self.__cat}, {self.__pre}\n")
-        
+    def __str__(self):
+        return (f"{self.__tit}, {self.__cat}, {self.__pre}")
+    
+    def calcularimporte(self):
+        pass

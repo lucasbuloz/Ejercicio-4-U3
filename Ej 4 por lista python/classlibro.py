@@ -10,4 +10,13 @@ class libro(publi):
         self.__fecha=f
         self.__cantpag=cp
         
+    def __str__(self):
+        return (f"titulo: {self.gettit()}, cat: {self.getcat()}, prec: {self.getpre()}, nom: {self.__nom}, fecha: {self.__fecha}, cantpag: {self.__cantpag} ")
     
+    def getfecha(self):
+        return self.__fecha
+
+    def calcularimporte(self):
+        diferencia=2024 - self.getfecha()
+        implib= float(((diferencia/100)*self.getpre()))
+        return implib

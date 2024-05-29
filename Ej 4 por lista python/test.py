@@ -4,7 +4,7 @@ from classCD import CD
 from gestor import gestor
 
 def test():
-    g=gestor
+    g=gestor()
     
     b=True
     
@@ -17,11 +17,20 @@ def test():
         print("5. Finalizar ")
         
         op= int(input("Ingrese opcion: "))
-        
+        while op < 1 or op> 5:
+            print("Opcion inválida, intente de nuevo")
+            op= int(input("Ingrese opcion: "))
         if op==1:
             g.inicializarcd()
             g.inicializarlibro()
-            
+            g.mostrar()
             
         elif op== 2:
-            g
+            g.encontrar()
+        elif op== 3:
+            g.contarpubli()
+        elif op== 4:
+            g.mostrartodo()
+        elif op== 5:
+            print("----MENU CERRADO---")
+            b=False 
