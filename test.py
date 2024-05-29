@@ -9,8 +9,8 @@ def test():
     lis= libro("OrgulloyPrejuicio", "Novela", 1300, "Pepito", 2015, 177)
     cd1 = CD("los 3 chanchitos", "fabula", 200, 50, "bartolome")
     lis1 = libro("los 3 chanchitos", "fabula", 1200, "juan", 2004, 1000)
-    
-    while True:
+    b=True
+    while b==True:
         print("---MENU DE OPCIONES---")
         print("1. Agregar publicaciones")
         print("2. Encontrar publicacion ")
@@ -36,4 +36,4 @@ def test():
         elif op==4:
             L.mostrartodo()
         elif op==5:
-            break
+            b=False
