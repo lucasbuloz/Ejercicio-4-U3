@@ -18,7 +18,7 @@ class gestor:
         archivo.close()
             
     def inicializarlibro(self):
-        archivo=open("C:/Users/Buloz/Documents/Lucas/Facultad/LCC/POO/Unidad 3/Codigos U3/Ejercicio-4-U3/Ej 4 por lista python/archviolibro.csv", "r")
+        archivo=open("C:/Users/lucas/OneDrive/Documents/Lucas/Facultad/POO/Unidad 3/Ejercicio 4/Ej 4 por lista python/archvioCD.csv", "r")
         reader=csv.reader(archivo, delimiter=",")
         for fila in reader:
             nlibro=libro(fila[0], fila[1], float(fila[2]),fila [3],int(fila[4]),int(fila[5]))
